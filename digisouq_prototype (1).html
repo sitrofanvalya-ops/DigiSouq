@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>دجيتال ماركت — متجر المنتجات الرقمية</title>
+<style>
+:root{--ink:#111;--line:#d7d7d7;--soft:#f7f7f7;--accent:#ff72d2;--accent2:#8c5cff}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,"Noto Sans Arabic",sans-serif;color:var(--ink);background:#fff}
+header{padding:22px 4vw 16px;border-bottom:1px solid var(--line);position:sticky;top:0;background:#fff;z-index:5}
+.top{display:flex;align-items:center;justify-content:space-between;gap:18px}.logo{font-size:42px;font-weight:900;letter-spacing:-2px}
+.avatar{width:42px;height:42px;border:2px solid #111;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,#8c5cff,#ff72d2);font-weight:900}
+.searchrow{display:flex;gap:14px;margin-top:22px}.search{flex:1;height:62px;border:2px solid #222;border-radius:12px;display:flex;align-items:center;padding:0 20px;gap:12px;font-size:20px;color:#777}.search input{border:0;outline:0;font-size:18px;flex:1;background:transparent}.filter{width:74px;border:2px solid #222;border-radius:12px;background:white;font-size:28px}
+main{max-width:920px;margin:36px auto;padding:0 18px}.crumb{color:#777;margin-bottom:14px}.gallery{border:1px solid #222;border-radius:12px;overflow:hidden}.hero{height:390px;background:linear-gradient(135deg,#172f4c,#6b7180);display:grid;place-items:center;position:relative}.hero .mock{width:70%;height:75%;border-radius:20px;background:linear-gradient(135deg,#d9e6f5,#fff);display:grid;place-items:center;font-size:72px;font-weight:900;color:#203e66;box-shadow:0 18px 45px #0005}.badge{position:absolute;top:18px;left:18px;background:#fff;border:2px solid #111;padding:8px 13px;border-radius:999px;font-weight:700}.dots{text-align:center;padding:12px}.dot{display:inline-block;width:16px;height:16px;border:2px solid #111;border-radius:50%;margin:0 5px}.dot.active{background:#111}
+.card{border:1px solid #222;border-radius:12px;margin-top:20px;overflow:hidden}.title{font-size:38px;line-height:1.25;font-weight:800;padding:26px 30px;border-bottom:1px solid var(--line)}.meta{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--line)}.price{font-size:25px;font-weight:800;padding:20px 26px;border-left:1px solid var(--line)}.seller{padding:20px 26px}.rating{padding:20px 26px;font-size:20px;border-bottom:1px solid var(--line)}.stars{letter-spacing:3px}.description{padding:24px 26px;font-size:18px;line-height:1.9}.buybar{position:sticky;bottom:0;background:#fff;border-top:1px solid #ccc;padding:16px;display:flex;justify-content:space-between;align-items:center;gap:16px}.buybtn{border:0;background:var(--accent);padding:16px 28px;border-radius:10px;font-size:19px;font-weight:800;cursor:pointer}.buybtn:hover{filter:brightness(.95)}.cart{font-weight:800;font-size:20px}
+.categories{display:flex;gap:10px;flex-wrap:wrap;margin:25px 0}.cat{padding:9px 14px;border:1px solid #bbb;border-radius:999px;background:#fff;cursor:pointer}.cat:hover{border-color:#111}
+footer{text-align:center;padding:35px;color:#777}
+@media(max-width:650px){.logo{font-size:32px}.hero{height:280px}.title{font-size:29px}.meta{grid-template-columns:1fr}.price{border-left:0;border-bottom:1px solid var(--line)}main{margin-top:20px}.buybar{flex-direction:row}.searchrow{gap:8px}.filter{width:60px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="top">
+    <div class="logo">DigiSouq</div>
+    <div class="avatar">DS</div>
+  </div>
+  <div class="searchrow">
+    <div class="search">⌕ <input id="search" placeholder="ابحث عن المنتجات الرقمية"></div>
+    <button class="filter" onclick="alert('الفلاتر: كتب، تصاميم، قوالب، دورات')">☰</button>
+  </div>
+</header>
+
+<main>
+  <div class="crumb">الرئيسية / كتب رقمية / تطوير الذات</div>
+  <div class="categories">
+    <button class="cat">كتب رقمية</button><button class="cat">قوالب</button>
+    <button class="cat">تصاميم</button><button class="cat">دورات</button>
+  </div>
+
+  <section class="gallery">
+    <div class="hero">
+      <div class="badge">منتج رقمي</div>
+      <div class="mock">YOUR<br>STORY</div>
+    </div>
+    <div class="dots"><span class="dot active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+  </section>
+
+  <section class="card">
+    <div class="title">كتاب رقمي ملهم: أنت أقوى مما تظن</div>
+    <div class="meta">
+      <div class="price">35 دولارًا</div>
+      <div class="seller">بواسطة <b>DigiSouq Studio</b></div>
+    </div>
+    <div class="rating"><span class="stars">★★★★★</span> <b>4.9</b> — 1,398 تقييمًا</div>
+    <div class="description">
+      كتاب رقمي مصمم لمساعدة القارئ على بناء الثقة بالنفس، تجاوز العقبات، وتحويل التجارب الصعبة إلى قوة ودافع للاستمرار.
+      <br><br><b>ما الذي تحصل عليه؟</b><br>
+      ملف PDF عالي الجودة + نسخة مناسبة للهاتف + تحديثات مستقبلية للمنتج.
+    </div>
+  </section>
+</main>
+
+<div class="buybar">
+  <div class="cart" id="cart">السلة: 0 منتج</div>
+  <button class="buybtn" onclick="addToCart()">أضف إلى السلة — 35$</button>
+</div>
+<footer>© 2026 DigiSouq — منصة للمنتجات الرقمية</footer>
+
+<script>
+function addToCart(){
+  const cart=document.getElementById('cart');
+  cart.textContent='السلة: 1 منتج';
+  alert('تمت إضافة المنتج إلى السلة!');
+}
+document.getElementById('search').addEventListener('keydown',e=>{
+  if(e.key==='Enter' && e.target.value.trim()) alert('البحث عن: '+e.target.value);
+});
+</script>
+</body>
+</html>
